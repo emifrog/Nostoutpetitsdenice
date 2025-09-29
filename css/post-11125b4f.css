@@ -56,7 +56,6 @@
 .elementor-kit-1112 input[type="button"],
 .elementor-kit-1112 input[type="submit"],
 .elementor-kit-1112 .elementor-button {
-    text-transform: uppercase;
     color: var(--e-global-color-accent);
     background-color: #DAE1EB00;
     border-style: solid;

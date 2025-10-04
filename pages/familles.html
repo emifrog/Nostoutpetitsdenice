@@ -30,28 +30,42 @@
     <header class="header">
         <div class="header-top">
             <div class="container">
+                <div class="header-links">
+                    <a href="../data/LIVRE PARENTS 2025.pdf" target="_blank" class="btn-download">
+                        <i class="fas fa-book"></i> <span>Le livret des parents</span></a>
+                    <a href="../pages/contact.html" class="btn-contact">Nous contacter</a>
+                    <a href="tel:0628347814" target="_blank" class="btn-contact">
+                        <i class="fas fa-phone"></i> <span>06 28 34 78 14</span></a>
+                    <a href="#don" class="btn-donate">Faire un don</a>
+                </div>
+                <div class="header-sociaux">
+                    <a href="https://www.facebook.com/nostoutpetitsdenice" target="_blank" class="btn-download">
+                        <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nostoutpetitsdenice/" target="_blank" class="btn-download">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/nos-tout-petits-de-nice/" target="_blank" class="btn-download">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../images/NTPN-logo-retina-240px-1.png" alt="Nos Tout Petits de Nice">
+                        <img src="../images/logo.png" alt="Nos Tout Petits de Nice">
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li class="current-menu-item"><a href="familles.html">Familles</a></li>
-                        <li><a href="../professionnels/">Professionnels</a></li>
-                        <li><a href="../evenements/">Événements</a></li>
-                        <li><a href="../a-propos/">À propos</a></li>
-                        <li><a href="../contact/" class="btn-donation">Faire un don</a></li>
+                        <li><a href="#association">L'association</a></li>
+                        <li><a href="#deuil">Le deuil périnatal</a></li>
+                        <li><a href="pages/familles.html">Familles</a></li>
+                        <li><a href="#aider">Nous aider</a></li>
                     </ul>
                 </nav>
-                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="main-navigation">
-                    <span class="menu-icon">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </span>
-                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -81,7 +95,7 @@
                         </div>
                     </div>
                     <div class="content-image">
-                        <img src="../images/famille-soutien.jpg" alt="Accompagnement des familles en deuil périnatal">
+                        <img src="../images/lepetitprince2.jpg" alt="Accompagnement des familles en deuil périnatal">
                     </div>
                 </div>
             </section>
@@ -141,7 +155,7 @@
                         <p>Nos bénévoles, formés spécifiquement à l'accompagnement du deuil périnatal, sont là pour vous écouter sans jugement et vous apporter un soutien bienveillant.</p>
                     </div>
                     <div class="content-image">
-                        <img src="../images/accompagnement-personnalise.jpg" alt="Accompagnement personnalisé">
+                        <img src="../images/fond-ntpn.jpg" alt="Accompagnement personnalisé">
                     </div>
                 </div>
                 
@@ -150,38 +164,6 @@
                     <span class="testimonial-author">Marie, maman de Louise</span>
                 </div>
             </section>
-
-            <section id="resources" class="section bg-light">
-                <h2 class="text-center">Ressources utiles</h2>
-                <p class="text-center max-width-800">Découvrez nos ressources pour vous accompagner dans votre deuil.</p>
-                
-                <div class="links-grid">
-                    <a href="#" class="link-card">
-                        <i class="fas fa-book"></i>
-                        <div>
-                            <h3>Bibliographie</h3>
-                            <p>Une sélection d'ouvrages pour comprendre et vivre son deuil</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="link-card">
-                        <i class="fas fa-file-alt"></i>
-                        <div>
-                            <h3>Documents pratiques</h3>
-                            <p>Les démarches administratives après un décès périnatal</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="link-card">
-                        <i class="fas fa-link"></i>
-                        <div>
-                            <h3>Liens utiles</h3>
-                            <p>Des associations et sites de référence sur le deuil périnatal</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
         </div>
     </main>
 
@@ -190,7 +172,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="../images/NTPN-logo-white.png" alt="Nos Tout Petits de Nice">
+                    <img src="../images/NTPN-logo-retina-240px-1-192x192.png" alt="Nos Tout Petits de Nice">
                     <p>Accompagnement des familles en deuil périnatal et formation des professionnels de santé.</p>
                 </div>
                 
@@ -239,7 +221,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../main.js"></script>
     <script>
         // Script pour le bouton retour en haut
         window.addEventListener('scroll', function() {
@@ -257,357 +239,5 @@
             document.querySelector('.main-nav').classList.toggle('active');
         });
     </script>
-</html>
-        
-
-</head>
-<body>
-    <!-- En-tête -->
-    <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-links">
-                    <a href="../data/LIVRE PARENTS 2025.pdf" target="_blank" class="btn-download">
-                        <i class="fas fa-book"></i> <span>Le livret des parents</span></a>
-                    <a href="#contact" class="btn-contact">Nous contacter</a>
-                    <a href="tel:0628347814" target="_blank" class="btn-contact">
-                        <i class="fas fa-phone"></i> <span>06 28 34 78 14</span></a>
-                    <a href="#don" class="btn-donate">Faire un don</a>
-                </div>
-                <div class="header-sociaux">
-                    <a href="https://www.facebook.com/nostoutpetitsdenice" target="_blank" class="btn-download">
-                        <i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/nostoutpetitsdenice/" target="_blank" class="btn-download">
-                        <i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/nostoutpetitsdenice" target="_blank" class="btn-download">
-                        <i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="header-main">
-            <div class="container">
-                <div class="logo">
-                    <a href="../index.html">
-                        <img src="../images/logo.png" alt="Nos Tout Petits de Nice">
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="../index.html#association">L'association</a></li>
-                        <li><a href="../index.html#deuil">Le deuil périnatal</a></li>
-                        <li class="active"><a href="familles.html">Familles</a></li>
-                        <li class="has-submenu">
-                            <a href="#">Professionnels <i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li><a href="../pages/professionnels.html#formations">Nos formations DataDock</a></li>
-                                <li><a href="../data/LIVRE PROS 2025.pdf" target="_blank">Guide pour les professionnels</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../index.html#aider">Nous aider</a></li>
-                    </ul>
-                </nav>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Bannière -->
-    <section class="page-banner" style="background-image: url('../images/banner-familles.jpg');">
-        <div class="container">
-            <h1>Accompagnement des familles</h1>
-            <p class="banner-subtitle">Un soutien personnalisé pour traverser l'épreuve du deuil périnatal</p>
-        </div>
-    </section>
-
-    <!-- Contenu principal -->
-    <main class="main-content">
-        <div class="container">
-            <section class="section">
-                <h2>Ne restez pas seuls avec votre douleur</h2>
-                <div class="content-wrapper">
-                    <div class="content-text">
-                        <p>La perte d'un enfant pendant la grossesse ou peu après la naissance est une épreuve d'une grande violence. 
-                        À Nos Tout Petits de Nice, nous savons que chaque parcours de deuil est unique et mérite une écoute attentive et bienveillante.</p>
-                        
-                        <p>Notre équipe, composée de professionnels formés et de parents ayant vécu un deuil similaire, vous propose :</p>
-                        
-                        <ul class="custom-list">
-                            <li>Un espace d'échange sécurisé et confidentiel</li>
-                            <li>Un accompagnement personnalisé selon vos besoins</li>
-                            <li>Des groupes de parole animés par des professionnels</li>
-                            <li>Un réseau de professionnels spécialisés</li>
-                        </ul>
-                        
-                        <p>Que vous veniez de vivre cette épreuve ou que cela fasse plusieurs années, il n'est jamais trop tard pour être écouté et accompagné.</p>
-                        
-                        <div class="cta-buttons">
-                            <a href="#contact" class="btn-primary">
-                                <i class="fas fa-envelope"></i> Nous écrire
-                            </a>
-                            <a href="tel:0628347814" class="btn-secondary">
-                                <i class="fas fa-phone"></i> 06 28 34 78 14
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content-image">
-                        <img src="../images/ecoute.jpg" alt="Accompagnement et écoute" class="rounded-image">
-                    </div>
-                </div>
-            </section>
-
-            <section class="section bg-light">
-                <h2 class="text-center">Notre guide parents-familles</h2>
-                <p class="text-center max-width-800">Fruit de 10 années d'expérience auprès des familles endeuillées, ce guide a été conçu pour vous apporter des réponses concrètes à vos questions et vous guider dans ce parcours difficile.</p>
-                
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-book-open"></i></div>
-                        <h3>Au sommaire</h3>
-                        <ul class="checklist">
-                            <li>Comprendre le deuil périnatal</li>
-                            <li>Les étapes du deuil</li>
-                            <li>L'accueil de votre enfant</li>
-                            <li>Créer des souvenirs</li>
-                            <li>Le retour à la maison</li>
-                            <li>Les démarches administratives</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                        <h3>Pour qui ?</h3>
-                        <p>Ce guide s'adresse aux parents, grands-parents, frères et sœurs, et à toute personne touchée par un deuil périnatal. Il a été conçu pour vous accompagner à chaque étape de votre parcours.</p>
-                        <div class="testimonial">
-                            <p class="quote">"Ce guide a été une bouée de sauvetage dans notre parcours de deuil. Les conseils pratiques et les témoignages nous ont aidés à avancer."</p>
-                            <p class="author">- Marie, maman de Louise</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center" style="margin-top: 40px;">
-                    <a href="../data/LIVRE PARENTS 2025.pdf" target="_blank" class="btn-primary">
-                        <i class="fas fa-download"></i> Télécharger le guide
-                    </a>
-                    <p class="small-text">Format PDF - 5.2 Mo</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="text-center">Nos services d'accompagnement</h2>
-                <p class="text-center max-width-800">Nous vous proposons différents types d'accompagnement adaptés à vos besoins et à votre parcours de deuil.</p>
-                
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
-                        <h3>Entretiens individuels</h3>
-                        <p>Des entretiens confidentiels avec des professionnels formés au deuil périnatal pour vous écouter, vous conseiller et vous orienter.</p>
-                        <ul class="feature-list">
-                            <li>Sur rendez-vous</li>
-                            <li>En présentiel ou en visio</li>
-                            <li>Avec des psychologues spécialisés</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-users"></i></div>
-                        <h3>Groupes de parole</h3>
-                        <p>Des rencontres en petit groupe pour échanger avec d'autres parents ayant vécu une expérience similaire, animées par des professionnels.</p>
-                        <ul class="feature-list">
-                            <li>1 fois par mois</li>
-                            <li>Groupes de 6 à 8 personnes</li>
-                            <li>Animés par un binôme professionnel/parent bénévole</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-hands-helping"></i></div>
-                        <h3>Ateliers mémoire</h3>
-                        <p>Des ateliers créatifs pour créer des souvenirs de votre enfant et honorer sa mémoire.</p>
-                        <ul class="feature-list">
-                            <li>Ateliers d'écriture</li>
-                            <li>Création de boîtes à souvenirs</li>
-                            <li>Ateliers artistiques</li>
-                            <li>Cérémonies de mémoire</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="text-center" style="margin-top: 40px;">
-                    <a href="#contact" class="btn-secondary">
-                        <i class="fas fa-calendar-alt"></i> Voir le calendrier des ateliers
-                    </a>
-                </div>
-            </section>
-
-            <section class="section bg-light">
-                <h2 class="text-center">Ressources utiles</h2>
-                <p class="text-center max-width-800">Retrouvez ici tous nos documents et ressources pour vous accompagner dans votre deuil.</p>
-                
-                <div class="links-grid">
-                    <a href="../data/LIVRE PARENTS 2025.pdf" target="_blank" class="link-card">
-                        <i class="fas fa-file-pdf"></i>
-                        <div>
-                            <h3>Guide des parents</h3>
-                            <p>Notre guide complet pour les parents endeuillés</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="link-card">
-                        <i class="fas fa-file-alt"></i>
-                        <div>
-                            <h3>Fiches pratiques</h3>
-                            <p>Les démarches administratives après un décès périnatal</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="link-card">
-                        <i class="fas fa-book"></i>
-                        <div>
-                            <h3>Bibliographie</h3>
-                            <p>Une sélection d'ouvrages sur le deuil périnatal</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="link-card">
-                        <i class="fas fa-film"></i>
-                        <div>
-                            <h3>Vidéos</h3>
-                            <p>Témoignages et informations sur le deuil périnatal</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            
-            <section class="section" id="contact">
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h2>Contactez-nous</h2>
-                        <p>Notre équipe est à votre écoute pour répondre à vos questions et vous accompagner dans votre démarche.</p>
-                        
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Téléphone</h3>
-                                <p><a href="tel:0628347814">06 28 34 78 14</a></p>
-                                <p class="small-text">Lundi au vendredi, 9h-18h</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p><a href="mailto:nostoutpetitsdenice@gmail.com">nostoutpetitsdenice@gmail.com</a></p>
-                                <p class="small-text">Réponse sous 48h</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Adresse</h3>
-                                <p>123 Avenue de la Liberté<br>06000 Nice</p>
-                                <p class="small-text">Sur rendez-vous uniquement</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <h3>Envoyez-nous un message</h3>
-                        <form action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name">Votre nom *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Votre email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Sujet *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Sélectionnez un sujet</option>
-                                    <option value="accompagnement">Demande d'accompagnement</option>
-                                    <option value="renseignement">Renseignement</option>
-                                    <option value="groupe">Groupe de parole</option>
-                                    <option value="autre">Autre demande</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Votre message *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rgpd" name="rgpd" required>
-                                <label for="rgpd">J'accepte que mes données soient utilisées dans le cadre de ma demande *</label>
-                            </div>
-                            
-                            <button type="submit" class="btn-primary">
-                                <i class="fas fa-paper-plane"></i> Envoyer mon message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Pied de page -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <img src="../images/logo-white.png" alt="Nos Tout Petits de Nice" class="footer-logo">
-                    <p>Association d'accompagnement des familles touchées par le deuil périnatal et de formation des professionnels de santé.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Liens rapides</h4>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../index.html#association">L'association</a></li>
-                        <li><a href="../index.html#deuil">Le deuil périnatal</a></li>
-                        <li><a href="familles.html">Pour les familles</a></li>
-                        <li><a href="../pages/professionnels.html">Pour les professionnels</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-phone"></i> 06 28 34 78 14</p>
-                    <p><i class="fas fa-envelope"></i> nostoutpetitsdenice@gmail.com</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/nostoutpetitsdenice" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/nostoutpetitsdenice/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.twitter.com/nostoutpetitsdenice" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nos Tout Petits de Nice - Tous droits réservés</p>
-                <div class="legal-links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../main.js"></script>
 </body>
 </html>

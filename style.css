@@ -152,10 +152,9 @@
 /* Bannière */
 .page-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--banner-image) center/cover no-repeat;
-    color: var(--white);
-    padding: 120px 0;
+    color: #09357B;
+    padding-top: 200px;
     text-align: center;
-    margin-bottom: 60px;
     position: relative;
 }
 
@@ -284,15 +283,15 @@
 /* Grille de fonctionnalités */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
     margin-top: 40px;
 }
 
 .feature-card {
     background: var(--white);
     border-radius: var(--border-radius);
-    padding: 30px;
+    padding: 10px;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
     text-align: center;
@@ -1409,7 +1408,7 @@ img {
 
 /* Bannière principale */
 .hero {
-    background: linear-gradient(rgba(9, 53, 123, 0.8), rgba(9, 53, 123, 0.6)), url('../images/illustration-etoiles-nuit-famille-papa-maman-bebe.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(9, 53, 123, 0.8), rgba(9, 53, 123, 0.6)), url('../images/lepetitprince.png') no-repeat center center/cover;
     min-height: 60vh;
     display: flex;
     align-items: center;

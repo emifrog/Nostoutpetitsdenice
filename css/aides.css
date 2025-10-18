@@ -1,0 +1,263 @@
+/* Styles spécifiques pour la page aides.html */
+
+/* Bannière */
+.page-banner {
+    background: url('../images/fond-ntpn.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0 100px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 40px;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.page-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-banner h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-banner p {
+    font-size: 1.3rem;
+    color: #333333;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Grille des bénévoles */
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.volunteer-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.volunteer-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Section adhésion */
+.membership-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.membership-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.membership-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section dons */
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.donation-content h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.donation-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Liste à puces */
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 30px;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Carrousel des partenaires */
+.partenaires-carousel {
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.partenaires-carousel-container {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.partenaire-slide {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.partenaire-slide img {
+    max-width: 150px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partenaire-slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 5));
+    }
+}
+
+/* Styles responsifs */
+@media (max-width: 1200px) {
+    .page-banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-banner p {
+        font-size: 1.2rem;
+    }
+    
+    .membership-grid,
+    .donation-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .membership-grid,
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .membership-image,
+    .donation-image {
+        order: -1;
+    }
+    
+    .partenaire-slide {
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-banner {
+        padding: 100px 0 80px;
+    }
+    
+    .page-banner h1 {
+        font-size: 2.2rem;
+    }
+    
+    .volunteer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partenaire-slide {
+        min-width: 140px;
+        padding: 0 15px;
+    }
+    
+    .partenaire-slide img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-banner {
+        padding: 80px 0 60px;
+    }
+    
+    .page-banner h1 {
+        font-size: 1.8rem;
+    }
+    
+    .checklist li {
+        font-size: 1rem;
+    }
+    
+    .partenaire-slide {
+        min-width: 120px;
+    }
+    
+    .partenaire-slide img {
+        max-width: 100px;
+    }
+}

@@ -2,39 +2,39 @@
 
 /* Bannière */
 .donation-banner {
-        background: url('../images/fond-ntpn.jpg') no-repeat center center;
+    background: url('../images/fond-ntpn.jpg') no-repeat center center;
     background-size: cover;
     padding: 120px 0 100px;
     text-align: center;
-    color: white;
     position: relative;
     margin-top: 40px;
 }
 
 .donation-banner h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
     margin-bottom: 30px;
     font-weight: 700;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 .donation-banner p {
     font-size: 1.3rem;
-    color: #333333;
+    color: var(--text-color);
     max-width: 700px;
     margin: 0 auto;
-    opacity: 0.9;
+    line-height: 1.6;
 }
 
 .tax-reduction {
     background: var(--secondary-color);
     display: inline-flex;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 40px;
     border-radius: 50px;
     margin: 20px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(226, 0, 122, 0.3);
+    color: white;
 }
 
 .tax-reduction .percentage {
@@ -42,6 +42,7 @@
     font-weight: 800;
     margin-right: 15px;
     line-height: 1;
+    color: white;
 }
 
 .tax-reduction .text {
@@ -49,6 +50,7 @@
     font-size: 1.2rem;
     line-height: 1.3;
     font-weight: 500;
+    color: white;
 }
 
 /* Cartes de dons */
@@ -125,34 +127,6 @@
     font-size: 0.95rem;
 }
 
-.btn-donate {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primary-color);
-    margin-top: auto;
-    min-height: 45px;
-}
-
-.btn-donate i {
-    margin-right: 8px;
-    font-size: 1rem;
-}
-
-.btn-donate:hover {
-    background: white;
-    color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(9, 53, 123, 0.2);
-}
 
 /* Section avantages fiscaux */
 .tax-info {
@@ -320,7 +294,7 @@
     padding: 0 20px;
 }
 
-testimonial cite {
+.testimonial cite {
     display: block;
     font-style: normal;
     font-weight: 600;
@@ -330,7 +304,7 @@ testimonial cite {
     padding-top: 15px;
 }
 
-testimonial cite:before {
+.testimonial cite:before {
     content: '';
     position: absolute;
     top: 0;
